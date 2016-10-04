@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText4"
+        android:id="@+id/edNilai1"
         android:hint="Nomer Satu" />
 
     <EditText
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText5"
+        android:id="@+id/edNilai2"
         android:hint="Nomer Dua" />
 
     <EditText
@@ -32,12 +32,13 @@
         android:layout_height="wrap_content"
         android:inputType="numberSigned"
         android:ems="10"
-        android:id="@+id/editText6"
+        android:id="@+id/edhasil"
         android:hint="Hasil" />
 
     <Button
         android:text="Tambah"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:onClick="tambahClick" />
 </LinearLayout>
