@@ -2,6 +2,7 @@ package bagus.cahya.kalkulator;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
@@ -16,11 +17,18 @@ public class MainActivity extends AppCompatActivity {
         nilai1 = (EditText) findViewById(R.id.edNilai1);
         nilai2 = (EditText) findViewById(R.id.edNilai2);
         hasil  =  (EditText) findViewById(R.id.edhasil);
-    }
 
-    public void tambahClick() {
+        btn = (Button) findViewById(R.id.button);
 
-        hasil.setText(Integer.parseInt(String.valueOf(nilai1.getText())) +
-                Integer.parseInt(String.valueOf(nilai2.getText())));
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int nil1 = Integer.parseInt(String.valueOf(nilai1.getText()));
+                int nil2 = Integer.parseInt(String.valueOf(nilai2.getText()));
+                String hsl = String.valueOf(nil1 + nil2);
+
+                hasil.setText(hsl);
+            }
+        });
     }
 }
