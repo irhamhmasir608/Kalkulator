@@ -10,10 +10,12 @@ public class MainActivity extends AppCompatActivity {
 
     EditText nilai1, nilai2, hasil;
     Button btn;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         nilai1 = (EditText) findViewById(R.id.edNilai1);
         nilai2 = (EditText) findViewById(R.id.edNilai2);
         hasil  =  (EditText) findViewById(R.id.edhasil);
@@ -30,5 +32,13 @@ public class MainActivity extends AppCompatActivity {
                 hasil.setText(hsl);
             }
         });
+    }
+
+    public int tambah(int nil1, int nil2) {
+        return nil1 + nil2;
+    }
+
+    public int kurang(int nil1, int nil2) {
+        return nil1 - nil2;
     }
 }
