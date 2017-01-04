@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="bagus.cahya.kalkulator.MainActivity"
+    tools:context="it.yudharta.smartkalkulator.MainActivity"
     android:orientation="vertical">
 
     <EditText
@@ -40,4 +40,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button" />
+
+    <Button
+        android:text="Voice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVoice"
+        android:onClick="clickVoice" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvVoice"
+        android:text="Hasil Voice" />
 </LinearLayout>
